@@ -181,7 +181,7 @@ app.post('/send-email', (req, res) => {
   // Create email data
   const emailData = {
     from: 'Excited User <mailgun@sandbox-123.mailgun.org>',
-    to: 'piousankrah99@gmail.com',
+    to: 'piousankrah9@gmail.com',
     subject: name,
     text: email,
     html: message
