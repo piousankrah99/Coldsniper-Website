@@ -172,7 +172,7 @@ const apiKey = process.env.MAILGUN_API_KEY; // Use your environment variable nam
 
 
 // Create a Mailgun client
-const mailgunClient = new Mailgun({ apiKey, domain: 'sandbox38cd1a67b98e41eabf315bb69516f6bf.mailgun.org' });
+const mailgunClient = new Mailgun({ apiKey, domain: '47df0a7d1489a830ea14c71714f5f5ef-6d8d428c-53ba8c4f' });
 
 app.post('/send-email', (req, res) => {
   // Retrieve the email data from the request body
