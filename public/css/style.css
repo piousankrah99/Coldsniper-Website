@@ -761,7 +761,7 @@ margin: 10px 40px 20px 40px;
 /*Smaller Screens Media Queries*/
 
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1363px) {
 
 	html, body, .bodyClass {
 	overflow-x: hidden;
