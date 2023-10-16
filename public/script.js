@@ -1,4 +1,4 @@
-fetch('https://football98.p.rapidapi.com/premierleague/news?rapidapi-key=cb261ac1f7msh6525fe8405c5a1ep15cfcdjsn42bf793727b0')
+fetch('https://football98.p.rapidapi.com/premierleague/news?rapidapi-key=03d49b89damshb8f15934dce31e7p17b839jsnabe8d1c7c643')
   .then((response) => {
     if (!response.ok) {
       throw new Error("Network response was not ok");
