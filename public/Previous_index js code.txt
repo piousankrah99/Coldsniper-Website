@@ -1,0 +1,73 @@
+$(document).ready(function() {
+  $("#themeButton").click(function() {
+    $(".page3_card1").css("background-color", "darkred");
+    $(".page3_card2").css("background-color", "darkred");
+    $(".page3_card3").css("background-color", "darkred");
+    $(".col-md-6").css("background-color", "darkred");
+    $(".card-body").css("background-color", "darkred");
+    $(".index-card-body").css("background-color", "darkred");
+    $(".horizontal_card-body").css("background-color", "darkred");
+    $(".card").css("background-image", "linear-gradient(darkred, black, darkred)");
+    $(".index_card").css("background-image", "linear-gradient(black, darkred, black)");
+    $(".navigation1").css("background-image", "linear-gradient(darkred, darkred)");
+    $(".navigation2, .navigation").css("background-image", "linear-gradient(darkred, darkred)");
+    $(".sign_up_bodyClass, .login_bodyClass").css("background-image", "linear-gradient(darkred, darkred)");
+    $(".navigation1").css("border-bottom", "2px solid whitesmoke");
+  });
+
+  var firstImage = 'img/ball3.jpg';
+  var secondImage = 'img/red_background.jpg';
+  var isSecondImageDisplayed = false;
+
+  function toggleBackground() {
+    if (isSecondImageDisplayed) {
+      $('.bottom_div_img').css('background-image', 'url("' + firstImage + '")');
+      isSecondImageDisplayed = false;
+    } else {
+      $('.bottom_div_img').css('background-image', 'url("' + secondImage + '")');
+      isSecondImageDisplayed = true;
+    }
+  }
+
+  // Attach click event to the button
+  $("#themeButton").click(toggleBackground);
+
+  var firstImage1 = 'img/ball2.jpg';
+  var secondImage1 = 'img/Barca4.jpg';
+  var isSecondImageDisplayed1 = false;
+
+  function toggleImage1() {
+    var imgElement = $('.card-img-top1');
+
+    if (isSecondImageDisplayed1) {
+      imgElement.attr('src', firstImage1);
+      isSecondImageDisplayed1 = false;
+    } else {
+      imgElement.attr('src', secondImage1);
+      isSecondImageDisplayed1 = true;
+    }
+  }
+
+  // Attach click event to the button
+  $('#themeButton').click(toggleImage1);
+
+  var firstImage2 = 'img/ball3.jpg';
+  var secondImage2 = 'img/Old_Trafford.jpg';
+  var isSecondImageDisplayed2 = false;
+
+  function toggleImage2() {
+    var imgElement = $('.card-img-top3');
+
+    if (isSecondImageDisplayed2) {
+      imgElement.attr('src', firstImage2);
+      isSecondImageDisplayed2 = false;
+    } else {
+      imgElement.attr('src', secondImage2);
+      isSecondImageDisplayed2 = true;
+    }
+  }
+
+  // Attach click event to the button
+  $('#themeButton').click(toggleImage2);
+});
+
